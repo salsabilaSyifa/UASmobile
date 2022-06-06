@@ -31,7 +31,7 @@ class PoetryListFragment : Fragment(){
                 .navigate(R.id.action_poetryListFragment_to_poetryDetailFragment)
         })
 
-        (activity as AppCompatActivity).supportActionBar?.title = "Karya Puisi Ozymandias"
+        (activity as AppCompatActivity).supportActionBar?.title = "Poemy"
 
         binding.recyclerView.addItemDecoration(MaterialDividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL))
 
