@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/poetryListFragment"
-        android:name="com.example.modul5.ui.PoetryListFragment"
+        android:name="com.example.poemy.ui.poetry.PoetryListFragment"
         android:label="PoetryListFragment" >
         <action
             android:id="@+id/action_poetryListFragment_to_poetryDetailFragment"
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/poetryDetailFragment"
-        android:name="com.example.modul5.ui.PoetryDetailFragment"
+        android:name="com.example.poemy.ui.poetry.PoetryDetailFragment"
         android:label="PoetryDetailFragment"
         tools:layout="@layout/fragment_poetry_detail">
         <action

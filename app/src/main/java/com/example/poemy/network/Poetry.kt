@@ -1,4 +1,8 @@
 package com.example.poemy.network
 
-class Poetry {
-}
+data class Poetry(
+    val title : String,
+    val author : String,
+    val lines : List<String>,
+    val linecount : Int
+)

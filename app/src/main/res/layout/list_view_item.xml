@@ -5,10 +5,10 @@
     <data>
         <variable
             name="poetry"
-            type="com.example.modul5.network.Poetry" />
+            type="com.example.poemy.network.Poetry" />
         <variable
             name="clickListener"
-            type="com.example.modul5.ui.PoetryListener" />
+            type="com.example.poemy.ui.poetry.PoetryListener" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

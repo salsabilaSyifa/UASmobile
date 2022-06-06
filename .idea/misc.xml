@@ -6,6 +6,8 @@
         <entry key="..\:/Semester 4/Praktikum Pemrograman Mobile/UASmobile/app/src/main/res/drawable/ic_connection_error.xml" value="0.1" />
         <entry key="..\:/Semester 4/Praktikum Pemrograman Mobile/UASmobile/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Semester 4/Praktikum Pemrograman Mobile/UASmobile/app/src/main/res/layout/fragment_poetry_detail.xml" value="0.1" />
+        <entry key="..\:/Semester 4/Praktikum Pemrograman Mobile/UASmobile/app/src/main/res/layout/fragment_poetry_list.xml" value="0.17552083333333332" />
+        <entry key="..\:/Semester 4/Praktikum Pemrograman Mobile/UASmobile/app/src/main/res/layout/list_view_item.xml" value="0.1" />
       </map>
     </option>
   </component>
