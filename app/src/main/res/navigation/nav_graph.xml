@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/poetryListFragment">
+
+    <fragment
+        android:id="@+id/poetryListFragment"
+        android:name="com.example.modul5.ui.PoetryListFragment"
+        android:label="PoetryListFragment" >
+        <action
+            android:id="@+id/action_poetryListFragment_to_poetryDetailFragment"
+            app:destination="@id/poetryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/poetryDetailFragment"
+        android:name="com.example.modul5.ui.PoetryDetailFragment"
+        android:label="PoetryDetailFragment"
+        tools:layout="@layout/fragment_poetry_detail">
+        <action
+            android:id="@+id/action_poetryDetailFragment_to_poetryListFragment"
+            app:destination="@id/poetryListFragment" />
+    </fragment>
+</navigation>

@@ -1,4 +1,4 @@
-package com.example.galanecoastro
+package com.example.poemy
 
 import org.junit.Test
 
