@@ -24,12 +24,12 @@ interface PoetryServiceApi{
 
 interface Poetry1ServiceApi{
     @GET("/author/Amy Levy")
-    suspend fun getData() : List<Poetry1>
+    suspend fun getData1() : List<Poetry1>
 }
 
 interface Poetry2ServiceApi{
     @GET("/author/Oliver Wendell Holmes")
-    suspend fun getData() : List<Poetry2>
+    suspend fun getData2() : List<Poetry2>
 }
 
 object PoetryApi{
