@@ -39,5 +39,22 @@
             android:id="@+id/action_poetryListFragment1_to_poetryDetailFragment1"
             app:destination="@id/poetryListFragment1" />
     </fragment>
+    <fragment
+        android:id="@+id/poetryListFragment2"
+        android:name="com.example.poemy.ui.poetry2.PoetryListFragment2"
+        android:label="PoetryListFragment2" >
+        <action
+            android:id="@+id/action_poetryListFragment2_to_poetryDetailFragment2"
+            app:destination="@id/poetryDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/poetryDetailFragment2"
+        android:name="com.example.poemy.ui.poetry2.PoetryDetailFragment2"
+        android:label="PoetryDetailFragment2"
+        tools:layout="@layout/fragment_poetry2_detail">
+        <action
+            android:id="@+id/action_poetryDetailFragment2_to_poetryListFragment2"
+            app:destination="@id/poetryListFragment2" />
+    </fragment>
 
 </navigation>

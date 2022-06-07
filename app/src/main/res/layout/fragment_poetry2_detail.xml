@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.poemy.ui.poetry2.PoetryViewModel2" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@{ viewModel.poem2.title}"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Lorem Ipsum" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@{viewModel.poem2.author}"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:text="@tools:sample/full_names" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/dividerHorizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/author" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+
+            <TextView
+                android:id="@+id/lines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:text="@{viewModel.listToString(viewModel.poem2.lines)}"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                app:layout_constraintTop_toTopOf="@+id/view"
+                tools:text="SWEET PICTURE of Life's chequer'd hour!\n
+Ah, wherefore droop thy blushing head?\n
+Tell me, oh tell me, hap'less flow'r,\n
+Is it because thy charms are fled?\n
+Come, gentle ROSE, and learn from me\n
+A lesson of Philosophy.\n
+\n
+Thy scented buds, LIFE'S joys disclose;\n
+They strew our paths with magic sweets;\n
+Where many a thorn like thine, fair ROSE,\n
+Full oft the weary wand'rer meets;\n
+And when he sees thy charms depart,\n
+He feels thy thorn within his heart.\n
+\n
+When Morn's bright torch illum'd the sky,\n
+Vainly thy flaunting buds display'd\n
+Enamell'd leaves of crimson die,\n
+Ill-fated blossoms doom'd to fade;\n
+So 'tis with BEAUTY, hapless flow'r,\n
+Its lustre blooms but for an hour.\n
+\n
+Come blushing ROSE, and on my breast\n
+Recline thy gentle head, and die;\n
+Thy scatter'd leaves shall there be press'd,\n
+Bath'd with a tear from PITY'S eye;\n
+There shall thy balmy sweets impart\n
+An essence grateful to my heart.\n
+\n
+Thus SYMPATHY, with lenient pow'r,\n
+Shall bid thy fading charms bestow\n
+Soft odours for life's happy hour,\n
+Kind, healing balsam for its woe!\n
+If such thy virtues, ROSE DIVINE!\n
+OH ! MAY THY ENVIED FATE BE MINE." />
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
