@@ -25,7 +25,6 @@ class PoetryDetailFragment1 : Fragment() {
         val binding = FragmentPoetry1DetailBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
-//        binding.viewModel = viewModel
 
         (activity as AppCompatActivity).supportActionBar?.title = viewModel.poem1.value?.title
         return binding.root
