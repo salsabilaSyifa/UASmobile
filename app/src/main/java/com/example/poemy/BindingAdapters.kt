@@ -30,6 +30,7 @@ fun bindRecyclerView1(recyclerView: RecyclerView, data: List<Poetry1>?){
 fun bindRecyclerView2(recyclerView: RecyclerView, data: List<Poetry2>?){
     val adapter = recyclerView.adapter as PoetryListAdapter2
     adapter.submitList(data)
+}
 
 @BindingAdapter("apiStatus")
 fun bindStatus(statusImageView: ImageView, status: PoetryApiStatus?) {
