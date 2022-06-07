@@ -12,8 +12,8 @@ import java.lang.Exception
 enum class Poetry2ApiStatus { LOADING, ERROR, DONE }
 
 class PoetryViewModel2 : ViewModel() {
-    private val _status2 = MutableLiveData<Poetry2ApiStatus>()
-    val status2: LiveData<Poetry2ApiStatus> = _status2
+    private val _status = MutableLiveData<Poetry2ApiStatus>()
+    val status: LiveData<Poetry2ApiStatus> = _status
 
     private val _poetry2 = MutableLiveData<List<Poetry2>>()
     val poetry2: LiveData<List<Poetry2>> = _poetry2
@@ -26,15 +26,15 @@ class PoetryViewModel2 : ViewModel() {
         return list.joinToString("\n")
     }
 
-    fun getPoetryList() {
+    fun getPoetry2List() {
         viewModelScope.launch {
-            _status2.value = Poetry2ApiStatus.LOADING
+            _status.value = Poetry2ApiStatus.LOADING
             try {
                 _poetry2.value = PoetryApi2.retrofitServiceApi.getData()
-                _status2.value = Poetry2ApiStatus.DONE
+                _status.value = Poetry2ApiStatus.DONE
             } catch (e: Exception) {
                 _poetry2.value = listOf()
-                _status2.value = Poetry2ApiStatus.ERROR
+                _status.value = Poetry2ApiStatus.ERROR
             }
         }
     }
