@@ -23,11 +23,11 @@ class PoetryListAdapter1(private val clickListener: Poetry1Listener) :
 
     companion object DiffCallback : DiffUtil.ItemCallback<Poetry1>(){
         override fun areItemsTheSame(oldItem: Poetry1, newItem: Poetry1): Boolean {
-            return oldItem.title1 == newItem.title1
+            return oldItem.title == newItem.title
         }
 
         override fun areContentsTheSame(oldItem: Poetry1, newItem: Poetry1): Boolean {
-            return oldItem.author1 == newItem.author1 && oldItem.linecount1 == newItem.linecount1
+            return oldItem.author == newItem.author && oldItem.linecount == newItem.linecount
         }
 
     }
