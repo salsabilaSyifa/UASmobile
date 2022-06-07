@@ -43,9 +43,6 @@ class PoetryListAdapter(private val clickListener: PoetryListener) :
         val poetry = getItem(position)
         holder.bind(clickListener, poetry)
     }
-
-
-
 }
 
 class PoetryListener(val clickListener: (poetry: Poetry ) -> Unit){
