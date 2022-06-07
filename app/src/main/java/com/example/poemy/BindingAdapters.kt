@@ -40,7 +40,7 @@ fun bindStatus(statusImageView: ImageView, status: PoetryApiStatus?) {
     }
 }
 
-@BindingAdapter("apiStatus")
+@BindingAdapter("apiStatuss")
 fun bindStatus(statusImageView: ImageView, status: Poetry1ApiStatus?) {
     when(status) {
         Poetry1ApiStatus.LOADING -> {

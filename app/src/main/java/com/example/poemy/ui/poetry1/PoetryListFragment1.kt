@@ -29,8 +29,8 @@ class PoetryListFragment1  : Fragment(){
         val binding = FragmentPoetry1ListBinding.inflate(inflater)
         viewModel.getPoetry1List()
         binding.lifecycleOwner = this
-        binding.viewModel= viewModel
-        binding.recyclerView.adapter = PoetryListAdapter1(Poetry1Listener { poetry1 ->
+        binding.viewModel1= viewModel
+        binding.recyclerView1.adapter = PoetryListAdapter1(Poetry1Listener { poetry1 ->
             viewModel.onPoetry1Clicked(poetry1)
             findNavController()
                 .navigate(R.id.action_poetryListFragment1_to_poetryDetailFragment1)
@@ -38,7 +38,7 @@ class PoetryListFragment1  : Fragment(){
 
         (activity as AppCompatActivity).supportActionBar?.title = "Poemy"
 
-        binding.recyclerView.addItemDecoration(MaterialDividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL))
+        binding.recyclerView1.addItemDecoration(MaterialDividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL))
 
 
         return binding.root

@@ -30,7 +30,7 @@ class PoetryViewModel1 : ViewModel() {
         viewModelScope.launch {
             _status.value = Poetry1ApiStatus.LOADING
             try {
-                _poetry1.value = Poetry1Api.retrofitServiceApi.getData()
+                _poetry1.value = Poetry1Api.retrofitServiceApi1.getData1()
                 _status.value = Poetry1ApiStatus.DONE
             } catch (e: Exception) {
                 _poetry1.value = listOf()

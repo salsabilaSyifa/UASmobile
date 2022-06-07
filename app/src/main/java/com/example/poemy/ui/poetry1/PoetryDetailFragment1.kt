@@ -15,19 +15,19 @@ import com.example.poemy.databinding.FragmentPoetry1DetailBinding
 import com.example.poemy.ui.poetry.PoetryViewModel
 
 class PoetryDetailFragment1 : Fragment() {
-    private val viewModel: PoetryViewModel1 by activityViewModels()
+    private val viewModel1: PoetryViewModel1 by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentPoetry1DetailBinding.inflate(inflater)
-        binding.lifecycleOwner = this
-        binding.viewModel = viewModel
+        val binding1 = FragmentPoetry1DetailBinding.inflate(inflater)
+        binding1.lifecycleOwner = this
+        binding1.viewModel = viewModel1
 
-        (activity as AppCompatActivity).supportActionBar?.title = viewModel.poem1.value?.title
-        return binding.root
+        (activity as AppCompatActivity).supportActionBar?.title = viewModel1.poem1.value?.title1
+        return binding1.root
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

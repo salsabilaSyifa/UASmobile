@@ -6,11 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.poemy.databinding.ListViewItem2Binding
-import com.example.poemy.databinding.ListViewItemBinding
-import com.example.poemy.network.Poetry
 import com.example.poemy.network.Poetry1
-import com.example.poemy.ui.poetry.PoetryListAdapter
-import com.example.poemy.ui.poetry.PoetryListener
 
 class PoetryListAdapter1(private val clickListener: Poetry1Listener) :
     ListAdapter<Poetry1, PoetryListAdapter1.Poetry1ViewHolder>(DiffCallback)
@@ -27,23 +23,23 @@ class PoetryListAdapter1(private val clickListener: Poetry1Listener) :
 
     companion object DiffCallback : DiffUtil.ItemCallback<Poetry1>(){
         override fun areItemsTheSame(oldItem: Poetry1, newItem: Poetry1): Boolean {
-            return oldItem.title == newItem.title
+            return oldItem.title1 == newItem.title1
         }
 
         override fun areContentsTheSame(oldItem: Poetry1, newItem: Poetry1): Boolean {
-            return oldItem.author == newItem.author && oldItem.linecount == newItem.linecount
+            return oldItem.author1 == newItem.author1 && oldItem.linecount1 == newItem.linecount1
         }
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : PoetryListAdapter1.Poetry1ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : Poetry1ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return PoetryListAdapter1.Poetry1ViewHolder(
+        return Poetry1ViewHolder(
             ListViewItem2Binding.inflate(layoutInflater, parent, false)
         )
     }
 
-    override fun onBindViewHolder(holder: PoetryListAdapter1.Poetry1ViewHolder, position: Int){
+    override fun onBindViewHolder(holder: Poetry1ViewHolder, position: Int){
         val poetry1 = getItem(position)
         holder.bind(clickListener, poetry1)
     }

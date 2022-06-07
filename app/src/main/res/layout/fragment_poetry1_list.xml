@@ -6,7 +6,7 @@
 
     <data>
         <variable
-            name="viewModel"
+            name="viewModel1"
             type="com.example.poemy.ui.poetry1.PoetryViewModel1" />
     </data>
 
@@ -15,23 +15,23 @@
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
+            android:id="@+id/recycler_view1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            app:listData="@{viewModel.poetry1}"
+            app:listDatas="@{viewModel1.poetry1}"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/list_view_item" />
+            tools:listitem="@layout/list_view_item2" />
 
 
         <!-- harus menampilkan status  -->
         <ImageView
-            android:id="@+id/status_image"
+            android:id="@+id/status_image1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:apiStatus="@{viewModel.status}"
+            app:apiStatuss="@{viewModel1.status}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
