@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/poemFragment"
+        android:id="@+id/poetryListFragment"
         android:icon="@drawable/ic_poem"
         android:title="Author 1" />
 
     <item
-        android:id="@+id/poem1Fragment"
+        android:id="@+id/poetryListFragment1"
         android:icon="@drawable/ic_poem1"
         android:title="Author 2" />
 
     <item
-        android:id="@+id/poem2Fragment"
+        android:id="@+id/poetryListFragment2"
         android:icon="@drawable/ic_poem2"
         android:title="Author 3" />
 

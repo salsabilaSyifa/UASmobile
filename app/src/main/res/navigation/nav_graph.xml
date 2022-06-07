@@ -22,6 +22,7 @@
             android:id="@+id/action_poetryDetailFragment_to_poetryListFragment"
             app:destination="@id/poetryListFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/poetryListFragment1"
         android:name="com.example.poemy.ui.poetry1.PoetryListFragment1"
@@ -39,6 +40,7 @@
             android:id="@+id/action_poetryListFragment1_to_poetryDetailFragment1"
             app:destination="@id/poetryListFragment1" />
     </fragment>
+
     <fragment
         android:id="@+id/poetryListFragment2"
         android:name="com.example.poemy.ui.poetry2.PoetryListFragment2"
