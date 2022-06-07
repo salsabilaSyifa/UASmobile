@@ -24,7 +24,12 @@ interface PoetryServiceApi{
 
 interface Poetry1ServiceApi{
     @GET("/author/Amy Levy")
-    suspend fun getData1() : List<Poetry1>
+    suspend fun getData() : List<Poetry1>
+}
+
+interface Poetry2ServiceApi{
+    @GET("/author/Oliver Wendell Holmes")
+    suspend fun getData() : List<Poetry2>
 }
 
 object PoetryApi{
@@ -34,7 +39,13 @@ object PoetryApi{
 }
 
 object Poetry1Api{
-    val retrofitServiceApi1 : Poetry1ServiceApi by lazy {
+    val retrofitServiceApi : Poetry1ServiceApi by lazy {
         retrofit.create(Poetry1ServiceApi::class.java)
+    }
+}
+
+object PoetryApi2{
+    val retrofitServiceApi : Poetry2ServiceApi by lazy {
+        retrofit.create(Poetry2ServiceApi::class.java)
     }
 }
