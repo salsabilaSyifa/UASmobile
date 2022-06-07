@@ -9,7 +9,7 @@
 * Puisi
 
 ### About
-* Memberikan informasi seputar puisi berdasarkan tiga penulis berbeda
+* Menampilkan puisi-puisi yang dituliskan tiga penyair berbeda
 
 ### Setup
 * Android Studio
