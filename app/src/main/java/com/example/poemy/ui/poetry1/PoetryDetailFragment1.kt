@@ -26,7 +26,7 @@ class PoetryDetailFragment1 : Fragment() {
         binding1.lifecycleOwner = this
         binding1.viewModel = viewModel1
 
-        (activity as AppCompatActivity).supportActionBar?.title = viewModel1.poem1.value?.title1
+        (activity as AppCompatActivity).supportActionBar?.title = viewModel1.poem1.value?.title
         return binding1.root
     }
 
